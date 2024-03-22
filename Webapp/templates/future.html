@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href='{% static 'past.css' %}'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>future</title>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+</head>
+<body class="bodyColour">
+  <h1>Data Visilazation Future</h1>
+<div class='ss'>
+    <form method="POST">
+     {% csrf_token %}
+              <input type="int" name="hum" id="name" placeholder="Humidity"/>
+              <input type="int" name="tem" id="email" placeholder="Temp"/>
+              <input type="submit" name="signup" id="signup" class="form-submit" value="check"/>
+    </form>
+</div>
+  <p>Humidity : {{data_api.main.humidity}} </p>
+    <p>Temp: {{data_api.main.temp}}</p>
+</div>
+    <table class="mainBox">
+        <caption title="categoarical values"> <h2>Data Analysis Forcasting</h2> </caption>
+        <tr>
+            <th colspan="2" title="Presnt Dataset"> Future</th>
+        </tr>
+    </table>
+    <div class="lineGraph"> 
+      <canvas id="lineChart"></canvas>
+      <script src='{% static "linechart.js" %}'></script>
+  </div>
+    <table class="secBox">
+
+        <tr>
+            <td>Carbon Dioxide</td>
+            <td name=>{{valuesco2}}</td>
+        </tr>
+        <tr>
+            <td>Nitric Oxide</td>
+            <td>{{valuesno2}}</td>
+        </tr>
+        <tr>
+            <td>Sulfur Oxide</td>
+            <td>{{valuesso2}}</td>
+        </tr>
+
+    </table>
+</body>
+</html>

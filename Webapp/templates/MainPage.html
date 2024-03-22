@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html>                        
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+<title>Air Pollution</title>
+<link rel="stylesheet" href='{% static 'mainPage.css' %}'>
+</head>
+
+</body>
+</html>
+
+<body class="main">
+<button class="button-55" role="button"> <a href="login"> Login </a> </button>
+<button class="button-55" role="button"> <a  href="regisitration"> regisitration </a> </button>
+<button class="button-55" role="button"> <a  href="get-weather_json/"> CheckValues </a> </button>
+ 
+  <table>
+    <caption title="categoarical values"> AIR Pollution Monitaring </caption>
+    <tr>
+        <th colspan="2" title="Presnt Dataset">Present - 
+        <a href="past">Past Days -</a> 
+        <a href="future">Looking Forward </a>
+        </th>
+    </tr>
+    <tr>
+        <th>CURRENT WEATHER</th>
+        <th>Moderate/colourchange</th>
+    </tr>
+    <tr>
+      <td>Carbon dioxide</td>
+      <td>{{ name.co}}</td>
+    </tr>
+    <tr>
+      <td>Nitric Oxide</td>
+      <td>{{ name.no2 }}</td>
+    </tr>
+    <tr>
+      <td>Sulfur Oxide</td>
+      <td>{{ name.so2 }}</td>
+    </tr>
+    <tr>
+        <th colspan="2">"Today weather......"</th>
+    </tr>  
+  </table>
+  <div class="bar"> 
+    <canvas id="myChart"></canvas>
+    <script src='{% static 'line.js' %}'></script>
+  </div>
+</body>
+</html>
+
+

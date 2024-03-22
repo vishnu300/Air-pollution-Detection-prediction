@@ -1,0 +1,78 @@
+.background{
+  background-color: hsl(80, 18%, 93%);
+}
+
+table {
+    
+    font-family: arial, sans-serif;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  two {
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 22px;
+  }
+
+  td {
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 22px;
+  }
+
+/* .Aditional_cln {
+    border: 1px solid black;
+    font-size: small;
+    text-align: center;
+} */
+
+.table3{
+    border: 1px solid rgb(191, 21, 21);
+    border-radius: 500px;
+    text-align: center;
+}
+
+
+.imagesee{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 24px 150px;
+}
+
+.bar{
+  display: flex;
+  justify-content: space-evenly;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 282px;
+  margin-left: 1px;
+
+}
+
+.lineGraph{
+  display: flex;
+  justify-content: space-evenly;
+  display: block;
+  margin-left: 1px;
+  margin-right: auto;
+  height: 200px;
+  width: 282px;
+
+}
+
+
+.pie{
+  display: flex;
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: 0 auto;
+  height: 152px;
+  width: 315px;
+  margin-left: 1px;
+}

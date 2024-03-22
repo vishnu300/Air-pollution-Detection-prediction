@@ -1,0 +1,46 @@
+.bodyColour{
+    background-color: hsl(80, 18%, 93%);
+}
+
+
+.mainBox {
+    
+    font-family: arial, sans-serif;
+    border-radius: 10px;
+    width: 68%;
+    margin: 0 auto;
+}
+
+td, th {
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 22px;
+}
+.secBox{
+    font-family: arial, sans-serif;
+    border-radius: 10px;
+    width: 32%;
+    margin: -234px 209px;
+}
+
+.pie{
+    display: block;
+    height: 226px;
+    width: 399px;
+    margin: 15px;
+    margin-left: 661px;
+  }
+
+
+.lineGraph{
+    display: block;
+    height: 226px;
+    width: 399px;
+    margin: 15px;
+    margin-left: 661px;
+}
+
+.ss{
+    display: flex;
+}

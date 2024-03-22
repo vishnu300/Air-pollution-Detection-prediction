@@ -1,0 +1,17 @@
+{% load static %}
+<!-- show.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Data</title>
+</head>
+<body>
+    <h1>Data from DjangoData Model</h1>
+    <ul>
+    {% for item in data1 %}
+            <li>{{ item.Country }} - {{ item.Year }} - {{ item.Age }} - M: {{ item.M }}, F: {{ item.F }}</li>
+        {% endfor %}
+ 
+    </ul>
+</body>
+</html>

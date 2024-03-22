@@ -1,0 +1,9 @@
+
+.head{
+    border-bottom: 2px solid black;
+}
+.modal-title{
+    color: #6ce82a;
+    text-align: center;
+    font-size: larger;
+}

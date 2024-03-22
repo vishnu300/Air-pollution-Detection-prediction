@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Weather Data</title>
+</head>
+<body>
+    <h1>Weather Data for {{ data.name }}, {{ data.sys.country }}</h1>
+    
+    <h2>Coordinates:</h2>
+    <ul>
+        <li>Latitude: {{ data.coord.lat }}</li>
+        <li>Longitude: {{ data.coord.lon }}</li>
+    </ul>
+
+    <h2>Weather Information:</h2>
+    <ul>
+        <li>Weather Condition: {{ data.weather.0.main }}</li>
+        <li>Description: {{ data.weather.0.description }}</li>
+    </ul>
+
+    <h2>Main Information:</h2>
+    <ul>
+        <li>Temperature: {{ data.main.temp }} K</li>
+        <li>Feels Like: {{ data.main.feels_like }} K</li>
+        <li>Pressure: {{ data.main.pressure }} hPa</li>
+        <li>Humidity: {{ data.main.humidity }}%</li>
+    </ul>
+
+    <h2>Wind Information:</h2>
+    <ul>
+        <li>Wind Speed: {{ data.wind.speed }} m/s</li>
+        <li>Wind Direction: {{ data.wind.deg }} degrees</li>
+    </ul>
+
+    <h2>Cloud Information:</h2>
+    <ul>
+        <li>Cloud Coverage: {{ data.clouds.all }}%</li>
+    </ul>
+
+    <h2>Sunrise and Sunset:</h2>
+    <ul>
+        <li>Sunrise: {{ data.sys.sunrise }}</li>
+        <li>Sunset: {{ data.sys.sunset }}</li>
+    </ul>
+
+</body>
+</html>

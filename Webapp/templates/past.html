@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href='{% static 'past.css' %}'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past</title>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+</head>
+<body class="bodyColour">
+    <table class="mainBox">
+        <caption title="categoarical values"><h2>Data Analysis Past</h2> </caption>
+        <tr>
+            <th colspan="2" title="past dataset">Past</th>
+        </tr>
+    </table>
+    <div class="pie"> 
+        <canvas id="PieGraph"></canvas>
+        <script src='{% static 'PieChart.js' %}'></script>
+    </div>
+    <table class="secBox">
+        <tr>
+            <td>Carbon dioxide</td>
+            <td>450</td>
+        </tr>
+        <tr>
+            <td>Nitric Oxide</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Sulfur Oxide</td>
+            <td>5</td>
+        </tr>
+    </table>
+</body>
+</html>

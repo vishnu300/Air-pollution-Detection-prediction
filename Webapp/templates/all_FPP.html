@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href='{% static "2ndPage.css" %}'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>summary</title>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+</head>
+<h1>Summary for AirPollution</h1>
+<body class="background">
+    <table class="two">
+        <tr >
+            <td>Today Conditions</td>
+        </tr>
+    </table>
+
+    <table class="Aditional_cln">
+        <tr>
+            <td>more Values Data</td>
+            <td>AMOUNT</td>
+        </tr>
+        <table>
+        <tr>
+            <td>Present</td>
+            <td>past</td>
+            <td>Future</td>
+        </tr>
+        </table>
+        <div class="imagesee">
+
+            <div class="bar"> 
+                <canvas id="myChart"></canvas>
+                <script src='{% static "line.js" %}'></script>
+            </div>
+            <div class="pie"> 
+                <canvas id="PieGraph"></canvas>
+                <script src='{%static "PieChart.js"%}'></script>
+            </div>
+            <div class="lineGraph"> 
+                <canvas id="lineChart"></canvas>
+                <script src='{% static "linechart.js" %}'></script>
+            </div>
+        </div>
+    </table>
+</body>
+</html>
